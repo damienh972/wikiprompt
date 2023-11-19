@@ -1,7 +1,15 @@
 {
-  "Index": {
+  "Home": {
     "main_title": "Trouvez et Partagez",
     "sub_title": "Prompts Générés par IA",
     "description": "Wikiprompt est un outil open source utilisant l'IA et permettant à tout le monde de découvrir, créer et partager des prompts créatifs"
+  },
+  "Nav": {
+    "logo_text": "Wikiprompt",
+    "create_prompt": "Créer un Prompt",
+    "login": "Se connecter",
+    "signup": "S'inscrire",
+    "logout": "Se déconnecter",
+    "profile_title": "Mon Profil"
   }
 }

@@ -1,7 +1,15 @@
 {
-  "Index": {
+  "Home": {
     "main_title": "Find and Share",
     "sub_title": "AI Powered Prompts",
     "description": "Wikiprompt is an open-source AI prompting tool for modern world to discover, create and share creative prompts"
+  },
+  "Nav": {
+    "logo_text": "Wikiprompt",
+    "create_prompt": "Create Prompt",
+    "login": "Login",
+    "signup": "Signup",
+    "logout": "Logout",
+    "profile_title": "My Profile"
   }
 }
