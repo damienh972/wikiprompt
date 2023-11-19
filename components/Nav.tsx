@@ -6,6 +6,9 @@ import {
   ClientSafeProvider,
   LiteralUnion,
   getProviders,
+  signIn,
+  signOut,
+  useSession,
 } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,15 +23,12 @@ const Nav = ({ content }: { content: NavMessages }) => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   useEffect(() => {
-    const fetchProviders = async () => {
-      const response = await getProviders();
-      console.log(response);
-      setProviders(response);
-    };
-    fetchProviders();
+    (async () => {
+      const res = await getProviders();
+      setProviders(res);
+    })();
   }, []);
-  const isUserLoggedIn = true;
-  async function signin(provider: string) {}
+  const { data: session } = useSession();
 
   async function logout() {}
   return (
@@ -45,12 +45,16 @@ const Nav = ({ content }: { content: NavMessages }) => {
       </Link>
       {/* Mobile navigation */}
       <div className='sm:flex hidden'>
-        {isUserLoggedIn ? (
+        {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
             <Link href='/create-prompt' className='black_btn'>
               {content.create_prompt}
             </Link>
-            <button type='button' onClick={logout} className='outline_btn'>
+            <button
+              type='button'
+              onClick={() => signOut()}
+              className='outline_btn'
+            >
               {content.logout}
             </button>
             <Link href='/profile'>
@@ -71,7 +75,7 @@ const Nav = ({ content }: { content: NavMessages }) => {
                   type='button'
                   key={provider.name}
                   onClick={() => {
-                    signin(provider.id);
+                    signIn(provider.id);
                   }}
                   className='black_btn'
                 >
@@ -83,7 +87,7 @@ const Nav = ({ content }: { content: NavMessages }) => {
       </div>
       {/* mobile navigation */}
       <div className='sm:hidden flex relative'>
-        {isUserLoggedIn ? (
+        {session?.user ? (
           <div className='flex'>
             <Image
               src='assets/images/logo.svg'
@@ -113,7 +117,7 @@ const Nav = ({ content }: { content: NavMessages }) => {
                   type='button'
                   onClick={() => {
                     setToggleDropdown(false);
-                    logout();
+                    signOut();
                   }}
                   className='black_btn mt-5 w-full'
                 >
@@ -130,7 +134,7 @@ const Nav = ({ content }: { content: NavMessages }) => {
                   type='button'
                   key={provider.name}
                   onClick={() => {
-                    signin(provider.id);
+                    signIn(provider.id);
                   }}
                   className='black_btn'
                 >
