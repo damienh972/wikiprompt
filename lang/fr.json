@@ -1,5 +1,7 @@
 {
   "Index": {
-    "title": "Bonjour mon ami"
+    "main_title": "Trouvez et Partagez",
+    "sub_title": "Prompts Générés par IA",
+    "description": "Wikiprompt est un outil open source utilisant l'IA et permettant à tout le monde de découvrir, créer et partager des prompts créatifs"
   }
 }
