@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wikiprompt
 
-## Getting Started
+Wikiprompt est une plateforme collaborative qui permet à quiconque de découvrir et de partager des prompts d'IA.
 
-First, run the development server:
+## Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Inscription des utilisateurs** : Les utilisateurs peuvent s'inscrire sur l'application pour accéder à toutes ses fonctionnalités.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Création de prompts** : Chaque utilisateur inscrit peut créer des prompts dans son espace personnel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Publication de prompts** : Les utilisateurs peuvent publier leurs prompts pour les partager avec la communauté.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Recherche de prompts** : Les utilisateurs peuvent rechercher et découvrir les prompts créés par d'autres utilisateurs enregistrés.
 
-## Learn More
+## Utilisation
 
-To learn more about Next.js, take a look at the following resources:
+Wikiprompt est conçu pour être facile à utiliser. Après vous être inscrit, vous pouvez commencer à créer vos propres prompts. Une fois que vous avez créé un prompt, vous pouvez le publier pour le partager avec d'autres utilisateurs. Vous pouvez également rechercher des prompts créés par d'autres utilisateurs pour découvrir de nouvelles idées et inspirations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Objectif
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+L'objectif de Wikiprompt est de faciliter la découverte et le partage de prompts d'IA. En permettant à quiconque de créer et de partager des prompts, nous espérons stimuler l'innovation et la créativité dans le domaine de l'IA.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Rejoignez-nous aujourd'hui et commencez à découvrir et à partager des prompts d'IA avec Wikiprompt !
